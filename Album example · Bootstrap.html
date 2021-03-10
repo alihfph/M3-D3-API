@@ -178,16 +178,12 @@
             This page will dynamically load pictures from the web, and display
             them in a cool way!
           </p>
+
           <p>
-            <a
-              class="btn btn-primary my-2"
-              id="firstImageSection"
-              onclick="trackInfo()"
+            <a class="btn btn-primary my-2" onclick="createCards()"
               >Load Images</a
             >
-            <a
-              href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/645003303291656.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2TAWW44RDWPS6YGR%2F20210310%2Feu-west-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20210310T122609Z&amp;X-Amz-Expires=600&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=inline%3B%20filename%2A%3DUTF-8%27%27M3-D3.html&amp;X-Amz-Signature=75156a0a8d56cb18674c130d4699bce9dd284000bea28ce1da0f8669c8811259#"
-              class="btn btn-secondary my-2"
+            <a class="btn btn-secondary my-2" onclick="createSecondaryCards()"
               >Load Secondary Images</a
             >
           </p>
@@ -196,7 +192,7 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <div class="row firstImageSection">
+          <div class="row firstImageSection secondImageSection">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <svg
